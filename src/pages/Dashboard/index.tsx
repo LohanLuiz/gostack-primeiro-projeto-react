@@ -9,14 +9,16 @@ const Dashboard: React.FC = () => {
   const [newRepo, setNewRepo] = useState('');
   const [repositories, setRepositories] = useState([]);
 
-  // function handleAddRepository() {}
+  function handleAddRepository(): void {
+    console.log(newRepo);
+  }
 
   return (
     <>
       <img src={logoImg} alt="GitHub Explorer" />
       <Title> Explore repositórios no Github</Title>
 
-      <Form>
+      <Form onSubmit={handleAddRepository}>
         <input
           value={newRepo}
           onChange={e => setNewRepo(e.target.value)}
