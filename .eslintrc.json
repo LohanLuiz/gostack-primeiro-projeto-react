@@ -1,6 +1,3 @@
-// 20201226133704
-// https://raw.githubusercontent.com/rocketseat-education/bootcamp-gostack-modulos/master/nivel-03/01-primeiro-projeto-com-react/.eslintrc.json
-
 {
   "env": {
     "browser": true,
